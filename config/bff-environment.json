@@ -1,0 +1,18 @@
+{
+  "ASPNETCORE_ENVIRONMENT": "Production",
+  "ASPNETCORE_HTTP_PORTS": "8080",
+  "GatewaySettings__BaseUrl": "http://localhost:8080",
+  "Logging__LogLevel__Yarp": "Information",
+  "ReverseProxy__Clusters__users-cluster__Destinations__destination1__Address": "http://users-not-deployed.invalid/",
+  "ReverseProxy__Clusters__orders-cluster__Destinations__destination1__Address": "http://orders-not-deployed.invalid/",
+  "ReverseProxy__Clusters__payments-cluster__Destinations__destination1__Address": "http://payments-not-deployed.invalid/",
+  "ReverseProxy__Routes__swa-mobile-phones__ClusterId": "products-cluster",
+  "ReverseProxy__Routes__swa-mobile-phones__Match__Path": "/api/mobile-phones/{**remainder}",
+  "ReverseProxy__Routes__swa-mobile-phones__Transforms__0__PathRemovePrefix": "/api",
+  "ReverseProxy__Routes__swa-categories__ClusterId": "products-cluster",
+  "ReverseProxy__Routes__swa-categories__Match__Path": "/api/categories/{**remainder}",
+  "ReverseProxy__Routes__swa-categories__Transforms__0__PathRemovePrefix": "/api",
+  "ReverseProxy__Routes__swa-currencies__ClusterId": "products-cluster",
+  "ReverseProxy__Routes__swa-currencies__Match__Path": "/api/currencies/{**remainder}",
+  "ReverseProxy__Routes__swa-currencies__Transforms__0__PathRemovePrefix": "/api"
+}
