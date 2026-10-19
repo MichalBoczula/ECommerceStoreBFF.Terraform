@@ -1,0 +1,19 @@
+subscription_id = "fcbf086b-8ce4-4ca5-a3d7-0c56489e25f6"
+environment     = "dev"
+
+# Published from ECommerceStoreBFF master commit 3bbbe1c1eb7e76fc60b1bfeebeba613c9477ad7b.
+# Update this digest intentionally after a successful image publication.
+bff_image = "mb0101/ecommerce-store-bff-api@sha256:ccf624855827c6ca0d59ffbf4b19459ad0d5899bbe997ba90ecabfd5e528873a"
+
+# Defaults select the Products resources above in the same subscription.
+# shared_environment = {
+#   name                = "cae-ecommercestore-products-dev"
+#   resource_group_name = "rg-ecommercestore-products-dev"
+# }
+# products_app = {
+#   name                = "ca-ecommercestore-products-dev"
+#   resource_group_name = "rg-ecommercestore-products-dev"
+# }
+
+external_ingress_enabled = false
+min_replicas             = 0
